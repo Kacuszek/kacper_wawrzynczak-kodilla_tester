@@ -8,6 +8,6 @@ public class Loops {
         for (int i = 0; i < numbers.length; i++) {
             result = result + numbers[i];
         }
-        return result;
+        System.out.println(result);
     }
 }
