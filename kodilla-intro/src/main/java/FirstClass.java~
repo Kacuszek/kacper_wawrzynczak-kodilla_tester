@@ -22,7 +22,6 @@ public class FirstClass {
         System.out.println(newNotebook.weight + " " + newNotebook.price + " " + newNotebook.year);
         newNotebook.checkPrice();
         newNotebook.checkWeight();
-        newNotebook.chekPriceAndYear();
 
 
     }
