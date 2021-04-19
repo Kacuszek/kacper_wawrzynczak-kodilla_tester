@@ -20,7 +20,7 @@ public class Grades {
             System.out.println(grades[i]);
     }
     public void averageGrades() {
-        for(int i = 0, i < grades.length; i++) {
+        for(int i = 0; i < grades.length; i++) {
             result = result + grades[i] / grades.length;
         }
     }
