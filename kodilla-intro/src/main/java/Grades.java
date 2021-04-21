@@ -1,8 +1,7 @@
 public class Grades {
     private int[] grades;
     private int size;
-    int value;
-    int result;
+    private int value;
     public Grades() {
         this.grades = new int[10];
         this.size = 0;
@@ -19,9 +18,11 @@ public class Grades {
         for(int i = 0; i < grades.length; i++)
             System.out.println(grades[i]);
     }
-    public void averageGrades() {
+    public double averageGrades() {
+         int result = 0;
         for(int i = 0; i < grades.length; i++) {
-            result = result + grades[i] / grades.length;
+           result = result + grades[i];
         }
+        return result / grades.length;
     }
 }
