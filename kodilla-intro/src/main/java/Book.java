@@ -6,5 +6,7 @@ public class Book {
         this.author = author;
         this.title = title;
     }
-    Book book = Book.of ("Adam Mickiewicz", "Pan Tadeusz");
+    public static String of(String author, String title){
+        return Book;
+    }
 }
