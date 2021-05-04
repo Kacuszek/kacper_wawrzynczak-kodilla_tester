@@ -1,0 +1,31 @@
+package com.kodilla.collections.sets.homework;
+
+public class Stamp {
+    private String name;
+    private double widthA;
+    private double widthB;
+    private String stamped;
+
+    public Stamp(String name, double widthA, double widthB, String stamped) {
+        this.name = name;
+        this.widthA = widthA;
+        this.widthB = widthB;
+        this.stamped = stamped;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public double getWidthA() {
+        return widthA;
+    }
+
+    public double getWidthB() {
+        return widthB;
+    }
+
+    public String getStamped() {
+        return stamped;
+    }
+}
