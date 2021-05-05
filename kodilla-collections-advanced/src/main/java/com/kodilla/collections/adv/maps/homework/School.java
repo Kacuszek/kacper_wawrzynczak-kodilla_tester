@@ -1,0 +1,25 @@
+package com.kodilla.collections.adv.maps.homework;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class School {
+    private List<Double> students = new ArrayList<>();
+
+    public School(double... students) {
+        for (double student : students)
+            this.students.add(student);
+    }
+
+    public double getSumOfStudents() {
+        double sum = 0;
+        for (double student : students)
+            sum += student;
+        return sum;
+    }
+
+    @Override
+    public String toString() {
+        return "Students" + students.toString();
+    }
+}
