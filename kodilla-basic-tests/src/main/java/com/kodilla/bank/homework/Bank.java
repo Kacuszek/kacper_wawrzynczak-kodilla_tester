@@ -15,7 +15,7 @@ public class Bank {
     public int getSumOfTransactionsFromCashMachines() {
         int sum = 0;
         for (int i = 0; i < this.cashMachines.length; i ++){
-            sum += this.cashMachines[i];
+            sum += this.cashMachines[i].getSumOfTransactions();
         }
         return sum;
     }
@@ -24,13 +24,9 @@ public class Bank {
         if (this.cashMachines.length == 0) {
             return 0;
         }
-        int minusAverage = 0;
         double sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
-            if (this.cashMachines[i] < 0) {
-                sum += this.cashMachines[i];
-                minusAverage++;
-            }
+                sum += this.cashMachines[i].getMinusAverage();
         }
         return sum / this.cashMachines.length;
     }
@@ -39,13 +35,9 @@ public class Bank {
             if (this.cashMachines.length == 0) {
                 return 0;
             }
-            int addAverage = 0;
         double sum = 0;
         for (int i = 0; i < this.cashMachines.length; i++) {
-            if (this.cashMachines[i] > 0) {
-                sum += this.cashMachines[i];
-                addAverage++;
-            }
+                sum += this.cashMachines[i].getAddAverage();
         }
         return sum / this.cashMachines.length;
     }
