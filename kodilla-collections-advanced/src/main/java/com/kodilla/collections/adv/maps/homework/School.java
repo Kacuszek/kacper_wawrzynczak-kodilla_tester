@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class School {
-    private List<Double> students = new ArrayList<>();
+    private List<Integer> students = new ArrayList<>();
 
-    public School(double... students) {
-        for (double student : students)
+    public School(int... students) {
+        for (int student : students)
             this.students.add(student);
     }
 
-    public double getSumOfStudents() {
-        double sum = 0;
+    public int getSumOfStudents() {
+        int sum = 0;
         for (double student : students)
             sum += student;
         return sum;
