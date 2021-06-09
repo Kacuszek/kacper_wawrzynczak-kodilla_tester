@@ -15,8 +15,8 @@ public class Grades {
         this.size++;
     }
     public void theNewestValue() {
-        for(int i = 0; i < grades.length; i++)
-            System.out.println(grades[i]);
+        int theNewestValue = grades[size - 1];
+            System.out.println(theNewestValue);
     }
     public double averageGrades() {
          int result = 0;
