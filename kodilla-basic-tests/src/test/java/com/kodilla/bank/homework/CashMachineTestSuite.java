@@ -24,7 +24,7 @@ public class CashMachineTestSuite {
         assertEquals(3, completedTransactions.length);
         assertEquals(3000, completedTransactions[0]);
         assertEquals(500, completedTransactions[1]);
-        assertEquals(1000, completedTransactions[3]);
+        assertEquals(1000, completedTransactions[2]);
     }
 
     @Test
