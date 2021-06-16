@@ -22,7 +22,7 @@ public class StringManipulatorTestSuite {
     }
 
     @ParameterizedTest
-    @CsvFileSource(resources = "/stringWithLowerCase.csv", numLinesToSkip = 1, delimiter = ':')
+    @CsvFileSource(resources = "/stringWithLowerCase2.csv", numLinesToSkip = 1, delimiter = ':')
     public void shouldCountNumberOfCommas(String input, int expected) {
         assertEquals(expected, manipulator.countNumberOfCommas(input));
     }
