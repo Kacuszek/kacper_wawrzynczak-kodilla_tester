@@ -20,12 +20,12 @@ public class CarsApplication {
     public static Car drawCar() {
         Random random = new Random();
         int drawnCarKind = random.nextInt(3);
-        int a = random.nextInt(201);
+        int speed = random.nextInt(201);
         if (drawnCarKind == 0)
-            return new Ford(a);
+            return new Ford(speed);
         else if (drawnCarKind == 1)
-            return new Opel(a);
+            return new Opel(speed);
         else
-            return new Audi(a);
+            return new Audi(speed);
     }
 }

@@ -8,7 +8,7 @@ public class BMISources {
     static Stream<Arguments> shouldCalculateBMI() {
         return Stream.of(
                 Arguments.of(1.93, 48, "Very severely underweight"),
-                Arguments.of(1.93, 55, "Severely underweight"),
+                Arguments.of(1.93, 59,"Severely underweight"),
                 Arguments.of(1.93, 62, "Underweight"),
                 Arguments.of(1.93, 81, "Normal (healthy weight)"),
                 Arguments.of(1.93, 103, "Overweight"),

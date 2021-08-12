@@ -8,10 +8,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class PersonTestSuite {
 
     @ParameterizedTest
-    @MethodSource(value= "com.kodilla.parametrized_tests.homework.BMISources.shouldCalculateBMI")
+    @MethodSource(value= "com.kodilla.parametrized_tests.homework.BMISources#shouldCalculateBMI")
     public void shouldCalculateBMI(double heightInMeters, double weightInKilogram, String expected) {
         Person person = new Person(heightInMeters, weightInKilogram);
         assertEquals(expected, person.getBMI());
     }
+
 
 }
