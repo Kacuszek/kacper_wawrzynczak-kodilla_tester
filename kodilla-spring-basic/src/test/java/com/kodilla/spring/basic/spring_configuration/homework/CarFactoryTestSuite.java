@@ -15,7 +15,7 @@ class CarFactoryTestSuite {
         ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring");
         Car car = (Car) context.getBean("dependingOnSeason");
         String carType = car.getCarType();
-        Assertions.assertEquals("Cabrio", carType);
+        Assertions.assertEquals("Sedan", carType);
     }
 
     @Test

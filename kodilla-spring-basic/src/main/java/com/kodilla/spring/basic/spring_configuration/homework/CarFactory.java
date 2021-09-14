@@ -1,5 +1,6 @@
 package com.kodilla.spring.basic.spring_configuration.homework;
 
+import org.graalvm.compiler.lir.CompositeValue;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
